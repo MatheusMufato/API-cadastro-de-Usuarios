@@ -1,0 +1,193 @@
+.split {                          
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+/* Separa os elementos em meia tela */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.split .wrapper{
+  position: relative;
+  width: 420px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .1);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.wrapper .form-box{
+  width: 100%;
+  padding: 30px; 
+}
+
+form h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+form .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .1);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box .icon{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  translate: 0 -50%;
+}
+
+form button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  color: #333;
+  font-weight: 700;
+}
+
+form button:hover{
+  background: #fff;
+  transition: .2s all;
+  scale: 1.05;
+}
+
+/*tela cadastrados */
+
+.split .wrapper2{
+  position: relative;
+  width: 520px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .1);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.user-box{
+  width: 100%;
+  padding: 30px;
+}
+
+.user-box h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.user-box .table{
+  width: 100%;
+  height: 300px;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.user-box .table td::-webkit-scrollbar{
+  display: none;
+}
+
+.user-box table tr td{
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;  
+}
+
+.user-box table tr th{
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.user-box table tr button{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  height: 45px;
+}
+.user-box table tr button:hover{
+  transition: .2s all;
+  background-color: #fff;
+  color: #333;
+  scale: 1.05;
+}
+
+.scrollable-content {
+  height: 100%;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
